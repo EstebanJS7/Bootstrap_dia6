@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+        <div class="table-responsive p-5 mt-5">    
+        <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+            <th scope="col">Version</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Resumen</th>
+            <th scope="col">Archivos</th>
+            <th scope="col">Detalles</th>
+            <th scope="col">Configuracion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1.6.16</th>
+            <td>22/03/2023</td>
+            <td><p>La nueva versión de la aplicación ofrece una interfaz 
+                más intuitiva y moderna. Se han agregado funciones de búsqueda avanzada para facilitar la exploración de contenido. Además, se ha mejorado la velocidad de carga y se han corregido errores previos. Los usuarios ahora pueden disfrutar de una experiencia más fluida y personalizable. 
+                ¡Descarga la última versión y descubre todas las mejoras!</p></td>
+            <td><button type="button" class="btn btn-outline-success" onclick="toggleRow(0)">Archivos</button></td>
+            <td><button type="button" class="btn btn-outline-success" onclick="toggleRow(1)">Detalles</button></td>
+            <td><button type="button" class="btn btn-outline-success" onclick="toggleRow(2)">Configuracion</button></td>
+            </tr>
+            <tr class="col d-none">
+                <td colspan="6">    
+                    <div class="card text-white bg-primary mb-3 w-100">
+                        <div class="card-header">Archivos</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="https://getbootstrap.com/">Elemento 1</a></li>
+                                <li class="list-group-item"><a href="https://getbootstrap.com/">Elemento 2</a></li>
+                                <li class="list-group-item"><a href="https://getbootstrap.com/">Elemento 3</a></li>
+                            </ul>
+                        <div class="card-footer">
+                            <small class="text-white">1.6.16</small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="col d-none">
+                <td colspan="6">    
+                    <div class="card text-white bg-primary mb-3 w-100">
+                        <div class="card-header">Detalles</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    ¡La última versión trae consigo una interfaz renovada y 
+                                    funciones mejoradas para una experiencia de usuario más fluida y eficiente!</li>
+                                <li class="list-group-item">
+                                    ¡La última versión trae consigo una interfaz renovada y 
+                                    funciones mejoradas para una experiencia de usuario más fluida y eficiente!</li>
+                                <li class="list-group-item">
+                                    ¡La última versión trae consigo una interfaz renovada y 
+                                    funciones mejoradas para una experiencia de usuario más fluida y eficiente!</li>
+                            </ul>
+                        <div class="card-footer">
+                            <small class="text-white">1.6.16</small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="col d-none">
+                <td colspan="6">
+                    <div class="card text-white bg-primary mb-3 w-100">
+                        <div class="card-header">Configuracion</div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Archivo.html
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <pre>
+                                        <code>
+                                        &lt;!DOCTYPE html&gt;
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;Título de la página&lt;/title&gt;
+                                            <span class="bg-success p-2 text-dark bg-opacity-25">&lt;/head&gt;</span>
+                                        &lt;body&gt;
+                                            &lt;h1&gt;Título principal&lt;/h1&gt;
+                                            <span class="bg-success p-2 text-dark bg-opacity-25">&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</span>
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Archivo.js
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <pre>
+                                        <code>
+                                            function sumNumbers(a, b) {
+                                                var sum = a + b;
+                                                return sum;
+                                            }
+                                            
+                                            <span class="bg-success p-2 text-dark bg-opacity-25">var num1 = 5;</span>
+                                            <span class="bg-success p-2 text-dark bg-opacity-25">var num2 = 3;</span>
+                                            var result = sumNumbers(num1, num2);
+                                            console.log("El resultado es: " + result);
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-white">1.6.16</small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <th scope="row">1.7.37</th>
+                <td>22/03/2023</td>
+                <td><p>La nueva versión de la aplicación ofrece una interfaz 
+                más intuitiva y moderna. Se han agregado funciones de búsqueda avanzada para facilitar la exploración de contenido. Además, se ha mejorado la velocidad de carga y se han corregido errores previos. Los usuarios ahora pueden disfrutar de una experiencia más fluida y personalizable. 
+                ¡Descarga la última versión y descubre todas las mejoras!</p></td>
+                <td><button type="button" class="btn btn-outline-success" onclick="toggleRow(3)">Archivos</button></td>
+                <td><button type="button" class="btn btn-outline-success" onclick="toggleRow(4)">Detalles</button></td>
+                <td><button type="button" class="btn btn-outline-success" onclick="toggleRow(5)">Configuracion</button></td>
+            </tr>
+            <tr class="col d-none">
+                <td colspan="6">    
+                    <div class="card text-white bg-primary mb-3 w-100">
+                        <div class="card-header">Archivos</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="https://getbootstrap.com/">Elemento 4</a></li>
+                                <li class="list-group-item"><a href="https://getbootstrap.com/">Elemento 5</a></li>
+                                <li class="list-group-item"><a href="https://getbootstrap.com/">Elemento 6</a></li>
+                            </ul>
+                        <div class="card-footer">
+                            <small class="text-white">1.7.37</small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="col d-none">
+                <td colspan="6">    
+                    <div class="card text-white bg-primary mb-3 w-100">
+                        <div class="card-header">Detalles</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    ¡La última versión trae consigo una interfaz renovada y 
+                                    funciones mejoradas para una experiencia de usuario más fluida y eficiente!</li>
+                                <li class="list-group-item">
+                                    ¡La última versión trae consigo una interfaz renovada y 
+                                    funciones mejoradas para una experiencia de usuario más fluida y eficiente!</li>
+                                <li class="list-group-item">
+                                    ¡La última versión trae consigo una interfaz renovada y 
+                                    funciones mejoradas para una experiencia de usuario más fluida y eficiente!</li>
+                            </ul>
+                        <div class="card-footer">
+                            <small class="text-white">1.7.37</small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="col d-none">
+                <td colspan="6">
+                    <div class="card text-white bg-primary mb-3 w-100">
+                        <div class="card-header">Configuracion</div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Archivo.html
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div>
+                                        <pre>
+                                            <code>
+                                                &lt;div&gt;
+                                                &lt;h1&gt;Título de la página&lt;/h1&gt;
+                                                <span class="bg-success p-2 text-dark bg-opacity-25">&&lt;p style=&quot;background-color: green;&quot;&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</span>
+                                                &lt;a href=&quot;#&quot; style=&quot;background-color: green;&quot;&gt;Enlace&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Archivo.js
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <pre>'
+                                        <code>
+                                            function calculateAverage(arr) {
+                                                if (Array.isArray(arr) && arr.length > 0) {
+                                                <span class="bg-success p-2 text-dark bg-opacity-25">const sum = arr.reduce((total, num) => total + num, 0);</span>
+                                                const average = sum / arr.length;
+                                                return average;
+                                                }
+                                                return 0;
+                                            }
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-white">1.7.37</small>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+
+
+  </main>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>
+    /*
+     function toggleRow(rowNumber) {
+      var row = document.getElementsByClassName("col")[rowNumber];
+      row.classList.toggle("d-none");
+    }
+    */
+    function toggleRow(rowNumber) {
+        var row = document.getElementsByClassName("col")[rowNumber];
+        var allRows = document.getElementsByClassName("col");
+
+        // Verificar si la fila está actualmente oculta
+        var isHidden = row.classList.contains("d-none");
+
+        // Ocultar todas las filas antes de mostrar la seleccionada
+        for (var i = 0; i < allRows.length; i++) {
+            allRows[i].classList.add("d-none");
+        }
+
+        // Mostrar la fila seleccionada solo si estaba oculta previamente
+        if (isHidden) {
+            row.classList.remove("d-none");
+        }
+    }
+  </script>
+</body>
+
+</html>
