@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  .submenu {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+  }
+
+  .sidebar a.active + .submenu,
+  .sidebar a.submenu-toggle.active + .submenu {
+      height: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+      .submenu-toggle {
+          position: relative;
+      }
+
+      .submenu-toggle::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          border: solid #555;
+          border-width: 0 2px 2px 0;
+          padding: 3px;
+          pointer-events: none;
+          transition: transform 0.3s ease;
+      }
+
+      .submenu-toggle.active::after {
+          transform: translateY(-50%) rotate(45deg);
+      }
+
+      .submenu {
+          height: auto;
+          overflow: visible;
+          transition: none;
+          display: none;
+      }
+
+      .sidebar a.submenu-toggle.active + .submenu {
+          display: block;
+      }
+  }
