@@ -79,20 +79,20 @@ body {
           padding: 3px;
           pointer-events: none;
           transition: transform 0.3s ease;
-      }
+        }
 
       .submenu-toggle.active::after {
           transform: translateY(-50%) rotate(45deg);
-      }
+        } 
 
       .submenu {
           height: auto;
           overflow: visible;
           transition: none;
           display: none;
-      }
+        } 
 
       .sidebar a.submenu-toggle.active + .submenu {
           display: block;
-      }
+        }
   }
